@@ -6,7 +6,7 @@ const index = () => {
     <View>
       <Text>Item</Text>
       <Link href={{
-        pathname:'/index'
+        pathname:'/'
       }}
       >back</Link>
     </View>
