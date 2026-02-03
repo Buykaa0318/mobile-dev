@@ -5,9 +5,19 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>babyapp</Text>
+
+      <Link
+      href={{
+        pathname: '/Cat',
+      }}>Cat</Link>
+
+      <Link href={{
+        pathname:'/Sub',
+        params: {cid:1, sid:2}
+      }}>Sub</Link>
       <Link 
       href = {{
-        pathname: '\Item',
+        pathname: '/Item',
         params:{cid:1, sid:2, iid:3},
       }} >ITEM</Link>
       <StatusBar style="auto" />
