@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import { Link } from 'expo-router';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>babyapp</Text>
+      <Link 
+      href = {{
+        pathname: '\Item',
+        params:{cid:1, sid:2, iid:3},
+      }} >ITEM</Link>
       <StatusBar style="auto" />
     </View>
   );
